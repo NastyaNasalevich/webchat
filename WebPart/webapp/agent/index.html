@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="wrapper">
+    <h1 class="page-header">It is my chat agent</h1>
+    <input type="text" class="form-control" placeholder="Username" id="username">
+    <div class="col-lg-3">
+        <select class="form-control" id="slots">
+            <option value="/slotsCount 1">1</option>
+            <option value="/slotsCount 2">2</option>
+            <option value="/slotsCount 3">3</option>
+            <option value="/slotsCount 4">4</option>
+            <option value="/slotsCount 5">5</option>
+        </select>
+    </div>
+
+    <div class="row" style="padding-top: 20px">
+        <div class="col-lg-3">
+            <button type="button" class="btn btn-success" id="connectBtn" onclick="connectAgent();">Connect</button>
+        </div>
+        <div class="row" style="padding-top: 20px">
+            <div class="panel-body">
+                <div class="panel-group" id="accordion">
+
+                    <div class="panel panel-default" id="pandef" + name>
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse" + name + class="collapsed" aria-expanded="false">" + name + " </a>
+                            </h4>
+                        </div>
+                        <div id="collapse" + name class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                            <div class="row" style="padding-top: 20px">
+                                <div class="col-lg-5">
+                                    <textarea class="form-control" rows="15" id="ta" + name></textarea>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top: 20px">
+                                <div class="col-lg-5">
+                                    <div class="form-group input-group">
+                                        <input type="text" class="form-control" id="msg" + name>
+                                        <span class=\"input-group-btn\">
+                                            <button class="btn btn-default" type="button" onclick="sendA(nm );"><i class="fa fa-send"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../websocket.js"></script>
+
+</body>
+</html>

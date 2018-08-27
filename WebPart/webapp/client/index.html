@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="wrapper">
+    <h1 class="page-header">client</h1>
+    <input type="text" class="form-control" placeholder="Username" id="username">
+    <button type="button" class="btn btn-success" id="connectBtn" onclick="connectClient();">Connect</button>
+    <button type="button" class="btn btn-danger" onclick="leave()">leave</button>
+    <textarea class="form-control" rows="15" id="log"></textarea>
+    <input type="text" class="form-control" id="msg">
+    <span class="input-group-btn">
+        <button class="btn btn-default" type="button" onclick="send();"></button>
+    </span>
+</div>
+
+<script src="../websocket.js"></script>
+
+</body>
+</html>
