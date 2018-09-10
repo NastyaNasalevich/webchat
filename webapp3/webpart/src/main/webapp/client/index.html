@@ -2,29 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Chat</title>
 </head>
 <body>
-<div id="wrapper">
-    <h1 class="page-header">Client interface</h1>
-    <input type="text" class="form-control" placeholder="Username" id="username">
-    <div class="row" style="padding-top: 20px">
-        <button type="button" class="btn btn-success" id="connectBtn" onclick="connectClient();">Connect</button>
+    <h1>Client interface</h1>
+    <input type="text" id="username" placeholder="Username" >
+    <div style="padding-top: 15px">
+        <button type="button" id="connectButton">Connect</button>
     </div>
-    <div class="row" style="padding-top: 20px">
-        <textarea class="form-control" rows="15" id="log"></textarea>
+    <div style="padding-top: 15px">
+        <textarea rows="15" id="history"></textarea>
     </div>
-    <div class="row" style="padding-top: 20px">
-        <div class="form-group input-group">
-            <input type="text" class="form-control" id="msg">
-            <span class="input-group-btn">
-                <button class="btn btn-default" type="button" onclick="sendMessageToAgent();">Send</button>
-            </span>
-        </div>
+    <div style="padding-top: 15px">
+        <input type="text" id="msg">
+        <button type="button" id="sendButton">Send</button>
     </div>
-</div>
 
-<script src="../websocket.js"></script>
+    <script src="../websocket.js"></script>
 
 </body>
 </html>

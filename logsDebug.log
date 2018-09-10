@@ -1,0 +1,9 @@
+01:06:12 - New connection opened
+01:07:11 - Illegal character in path at index 33: ws://localhost:8080/client/chat/f\/
+01:07:43 - New connection opened
+04:37:14 - An error occurred:java.net.ConnectException: Connection refused: connect
+04:37:14 - Closed with exit code -1 additional info: Connection refused: connect
+04:37:44 - New console user was connected
+04:37:54 - Closed with exit code 1000 additional info: 
+04:38:24 - New console user was connected
+04:38:39 - Closed with exit code 1000 additional info: 

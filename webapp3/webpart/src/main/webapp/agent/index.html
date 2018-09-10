@@ -2,28 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Chat</title>
 </head>
 <body>
-<div id="wrapper">
-    <h1 class="page-header">Agent interface</h1>
-    <input type="text" class="form-control" placeholder="Username" id="username">
-</div>
 
-<div class="row" style="padding-top: 20px">
-    <button type="button" class="btn btn-success" id="connectBtn" onclick="connectAgent();">Connect</button>
-    <div class="row" style="padding-top: 20px">
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default" id="pandef">
-                <div id="collapse" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                    <div class="row" style="padding-top: 20px">
-                        <textarea class="form-control" rows="15" id="log"></textarea>
-                    </div>
-                    <div class="row" style="padding-top: 20px">
-                        <input type="text" class="form-control" id="msg">
-                            <button class="btn btn-default" type="button" onclick="sendMessageToClient();">Send</button>
-                    </div>
-                </div>
+<h1>Agent interface</h1>
+<input id="username" type="text" placeholder="Username" >
+
+<div style="padding-top: 15px">
+    <button type="button" id="connectButton">Connect</button>
+    <div style="padding-top: 15px">
+        <div aria-expanded="false" style="height: 0px;">
+            <div style="padding-top: 15px">
+                <textarea rows="15" id="history"></textarea>
+            </div>
+            <div style="padding-top: 15px">
+                <input type="text" id="msg">
+                <button type="button" id="sendButton">Send</button>
             </div>
         </div>
     </div>

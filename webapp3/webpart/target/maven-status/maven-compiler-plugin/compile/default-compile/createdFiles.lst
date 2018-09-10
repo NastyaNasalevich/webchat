@@ -1,0 +1,8 @@
+AppEndPoint.class
+MessageDecoder.class
+Model\User.class
+Model\Client.class
+Services.class
+MessageEncoder.class
+Message.class
+Model\Agent.class
